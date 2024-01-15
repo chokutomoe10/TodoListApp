@@ -1,0 +1,1 @@
+1. Cara menjalankan api di postman adalah localhost:1323/router yang ada di program)
