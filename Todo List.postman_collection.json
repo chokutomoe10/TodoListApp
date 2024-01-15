@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "d9129b81-2dda-4287-b5b5-23f459235255",
+		"name": "Todo List",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29014475"
+	},
+	"item": [
+		{
+			"name": "List",
+			"item": [
+				{
+					"name": "Get All Lists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:1323"
+					},
+					"response": []
+				},
+				{
+					"name": "Get One List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:1323/list/14"
+					},
+					"response": []
+				},
+				{
+					"name": "Create List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "post title one",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "post desc one",
+									"type": "text"
+								},
+								{
+									"key": "files",
+									"contentType": "text/plain",
+									"type": "file",
+									"src": [
+										"/C:/BIG DATA/dumbways/Fullstack/persiapan kerja/Mitra Asa Pratama/Form Data Pelamar.pdf",
+										"/C:/BIG DATA/dumbways/Fullstack/persiapan kerja/Mitra Asa Pratama/Form Data Pelamar_Mikhael Bani Ardhanajaya.pdf"
+									]
+								}
+							]
+						},
+						"url": "localhost:1323/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Update List",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "post title",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "post desc",
+									"type": "text"
+								},
+								{
+									"key": "files",
+									"type": "file",
+									"src": [
+										"/C:/BIG DATA/dumbways/Fullstack/persiapan kerja/Mitra Asa Pratama/Form Data Pelamar.pdf",
+										"/C:/BIG DATA/dumbways/Fullstack/persiapan kerja/Mitra Asa Pratama/Form Data Pelamar_Mikhael Bani Ardhanajaya.pdf"
+									]
+								}
+							]
+						},
+						"url": "localhost:1323/list/8"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete List",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"title two\",\r\n    \"description\": \"desc two\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:1323/list/14"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sub List",
+			"item": [
+				{
+					"name": "Get All SubLists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:1323/subLists/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Get One SubList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:1323/subList/14"
+					},
+					"response": []
+				},
+				{
+					"name": "Create SubList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "subList_title",
+									"value": "title subList one",
+									"type": "text"
+								},
+								{
+									"key": "subList_description",
+									"value": "description subList one",
+									"type": "text"
+								},
+								{
+									"key": "subList_files",
+									"type": "file",
+									"src": [
+										"/C:/BIG DATA/dumbways/Fullstack/persiapan kerja/Mitra Asa Pratama/Form Data Pelamar.pdf",
+										"/C:/BIG DATA/dumbways/Fullstack/persiapan kerja/Mitra Asa Pratama/Form Data Pelamar_Mikhael Bani Ardhanajaya.pdf"
+									]
+								}
+							]
+						},
+						"url": "localhost:1323/subList/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Update List",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "subList_title",
+									"value": "title subList again",
+									"type": "text"
+								},
+								{
+									"key": "subList_description",
+									"value": "description subList again",
+									"type": "text"
+								},
+								{
+									"key": "subList_files",
+									"type": "file",
+									"src": [
+										"/C:/BIG DATA/dumbways/Fullstack/persiapan kerja/Moonlay/codes.txt",
+										"/C:/BIG DATA/dumbways/Fullstack/persiapan kerja/Moonlay/posts.txt"
+									]
+								}
+							]
+						},
+						"url": "localhost:1323/subList/14"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete List",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"title two\",\r\n    \"description\": \"desc two\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:1323/subList/14"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
